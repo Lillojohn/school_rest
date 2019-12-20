@@ -17,7 +17,8 @@ var inloggen = require('./routes/inloggen');
 voteRouter = require('./routes/voteRoutes');
 stellingRouter = require('./routes/stellingRoutes');
 
-var db = mongoose.connect('mongodb://188.166.3.49/Rest');
+// var db = mongoose.connect('mongodb://188.166.3.49/Rest');
+var db = mongoose.connect('mongodb://localhost/Rest');
 
 var Vote = require('./models/voteModel');
 var Stelling = require('./models/stellingModel');
