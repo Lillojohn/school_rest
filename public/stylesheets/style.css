@@ -1,0 +1,52 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+img {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,h2{
+  text-align: center;
+}
+
+h1 {
+  color: #97D0B1;
+}
+
+h2 {
+  color: #f7cabd;
+}
+
+#keuze {
+  width: 23%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-size: 60px;
+  text-align: center;
+  line-height: 200px;
+  color: white;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+#ja {
+  background: #97D0B1;
+  /*margin-left: auto;*/
+}
+
+#nee {
+  background: #f7cabd;
+  /*margin-right: auto;*/
+}

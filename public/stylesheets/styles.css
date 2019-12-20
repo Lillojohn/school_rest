@@ -1,0 +1,254 @@
+.gradient {
+  height: 100vh;
+  width: 100%;
+  background: #f7cabd;
+  background: -moz-linear-gradient(-45deg, #f7cabd 0%, #c3e5dc 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #f7cabd), color-stop(100%, #c3e5dc));
+  background: -webkit-linear-gradient(-45deg, #f7cabd 0%, #c3e5dc 100%);
+  background: -o-linear-gradient(-45deg, #f7cabd 0%, #c3e5dc 100%);
+  background: -ms-linear-gradient(-45deg, #f7cabd 0%, #c3e5dc 100%);
+  background: linear-gradient(135deg, #f7cabd 0%, #c3e5dc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7cabd', endColorstr='#c3e5dc', GradientType=1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 0; }
+
+#background {
+  display: none; }
+
+main {
+  opacity: 0; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+h1 {
+  font-size: 20px; }
+
+h2 {
+  font-size: 18px; }
+
+p {
+  font-size: 14px; }
+
+p, h2, li {
+  font-family: 'Open Sans', sans-serif; }
+
+canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0; }
+
+nav {
+  height: 10vh;
+  background: #97D0B1; }
+  nav #logo {
+    margin-top: 2vh;
+    float: left;
+    margin-left: 5%;
+    width: 20%;
+    margin-right: 25%;
+    height: 50%; }
+  nav img {
+    margin-top: 2vh;
+    height: 30px;
+    width: 30px;
+    margin-left: 30%; }
+
+main h2, main p {
+  margin-top: 4vh;
+  width: 88%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto; }
+main #stelling {
+  padding-bottom: 4vh; }
+  main #stelling #bar {
+    margin-top: 4vh;
+    width: 88%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto; }
+  main #stelling #bar {
+    height: 2vh;
+    background: #c6c6c6;
+    position: relative; }
+    main #stelling #bar #greenBar {
+      background: #EA9397;
+      width: 72%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2vh; }
+main #divider {
+  height: 2px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #c6c6c6;
+  margin-top: 2vh;
+  margin-bottom: 2vh; }
+main #mailing {
+  padding-bottom: 4vh; }
+  main #mailing form {
+    border: solid #c6c6c6 2px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh; }
+    main #mailing form input {
+      border: none;
+      width: 80%;
+      float: left; }
+    main #mailing form button {
+      width: 20%;
+      background: #c6c6c6;
+      border: none; }
+main #facebookComments {
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+  background: #97D0B1; }
+  main #facebookComments form {
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%; }
+  main #facebookComments textarea {
+    width: 100%; }
+main #shareFull {
+  display: none; }
+main #share, main #shareFull {
+  padding-top: 2vh;
+  padding-bottom: 8vh; }
+  main #share h1, main #shareFull h1 {
+    float: left; }
+  main #share .images, main #shareFull .images {
+    margin-top: 4vh;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around; }
+    main #share .images img, main #shareFull .images img {
+      width: 25px;
+      height: 25px; }
+main #stellingEen, main #stellingDrie {
+  background: #97D0B1; }
+  main #stellingEen .reactieKnop, main #stellingDrie .reactieKnop {
+    color: #609F82; }
+main #stellingTwee .reactieKnop {
+  color: #BC3950; }
+main .stelling {
+  background: #EA9397;
+  padding: 15px 0; }
+  main .stelling .reactieKnop {
+    text-align: right;
+    font-weight: bold; }
+  main .stelling h2 {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+main .plaats {
+  width: 88%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px; }
+  main .plaats img {
+    width: 100%; }
+  main .plaats p {
+    margin-top: 10px; }
+main #tip {
+  padding-top: 4vh;
+  padding-bottom: 7vh;
+  background: #EA9397;
+  margin-top: 3vh; }
+  main #tip h2 {
+    font-size: 12px; }
+main #inzenden textarea {
+  margin-top: 2vh;
+  width: 88%;
+  margin-left: 6%; }
+main #inzenden button {
+  border: none;
+  background: #609F82;
+  width: 20%;
+  margin-left: 75%;
+  padding: 5px;
+  color: white;
+  opacity: 0; }
+main #rank {
+  background: #EA9397;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-top: 10px; }
+main #jouw {
+  background: #97D0B1;
+  padding: 10px 0; }
+
+#menu {
+  position: fixed;
+  width: 67%;
+  height: 100vh;
+  background: white;
+  z-index: 999;
+  top: 0;
+  left: -67%;
+  border-right: solid #c6c6c6 2px; }
+  #menu li {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    border-bottom: solid #c6c6c6 2px; }
+
+#sendForm {
+  position: fixed;
+  width: 100%;
+  background: white;
+  height: 100vh;
+  z-index: 999;
+  left: 100%;
+  top: 0%; }
+  #sendForm header {
+    height: 5vh;
+    border-bottom: solid #c6c6c6 1px; }
+    #sendForm header div {
+      width: 30%;
+      float: left;
+      line-height: 5vh;
+      text-align: center;
+      color: white;
+      background: #EA9397;
+      cursor: pointer; }
+    #sendForm header h2 {
+      width: 70%;
+      text-align: center;
+      line-height: 5vh; }
+  #sendForm textarea {
+    width: 100%; }
+  #sendForm footer button {
+    border: none;
+    background: #609F82;
+    width: 20%;
+    margin-left: 75%;
+    padding: 5px;
+    color: white; }
+
+.stelling button {
+  margin-left: 24%;
+  border: none;
+  color: white; }
+
+.green {
+  background: #609F82; }
+
+.red {
+  background: #BC3950; }
+
+/*# sourceMappingURL=styles.css.map */

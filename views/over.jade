@@ -1,0 +1,38 @@
+extends layout
+block content
+    nav
+        img#logo(src='images/chewingvote.png')
+        img#menuButton(src='images/mobile-nav-icon.png')
+    main#zendpagina
+        h2 Heb jij een leuke stelling die we kunnen gebruiken?
+        form#inzenden
+            textarea(rows='15')
+            button Verstuur
+        section#tip
+            h2
+    section#background
+        .gradient
+        canvas#canvas(height='', width='')
+    section#menu
+        ul
+            a(href='index.html')
+                li Home
+            a(href='inloggen.html')
+                li Inloggen
+            a(href='inzenden.html')
+                li Stelling inzenden
+            a(href='mogelijk.html')
+                li Volgende stelling
+            a(href='stellingen.html')
+                li Stellingen
+            a(href='plaats.html')
+                li Plaats Stembus
+            a(href='over.html')
+                li Over
+            a(href='contact.html')
+                li Contact
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/TextPlugin.min.js')
+    script(src='javascripts/script.js')

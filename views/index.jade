@@ -1,0 +1,80 @@
+extends layout
+
+block content
+  nav
+    img#logo(src='images/chewingvote.png')
+    img#menuButton(src='images/mobile-nav-icon.png')
+  main
+    section#stelling
+      h2
+        strong  Bedankt voor het stemmen!
+
+      h2 Ik heb last van kauwgom op de grond.
+      section#bar
+        section#greenBar
+      p
+        span#procentStemmen 72%
+        |  van de stemmen zijn er mee eens. Er hebben
+        span#aantalStemmen 302
+        |  mensen gestemd.
+    section#shareFull
+      h2 Deel ons op
+      section.images
+        img(src='images/facebook.jpg')
+        img(src='images/twitter.jpg')
+        img(src='images/pinterest.jpg')
+        img(src='images/tumblr.jpg')
+    section#divider
+    section#mailing
+      h2 De volgende stelling gaat op 6 november van start!
+      p Wil je een email ontvangen met de uitslagen van de stelling?
+      form
+        input(type='text', placeholder='voorbeeld@voorbeeld.nl')
+        button Zend
+    section#facebookComments
+      h2#vraag Wat vind je van kauwgom op de grond?
+      form
+        textarea
+    section#share
+      h2 Deel ons op
+      section.images
+        img(src='images/facebook.jpg')
+        img(src='images/twitter.jpg')
+        img(src='images/pinterest.jpg')
+        img(src='images/tumblr.jpg')
+    section#tip
+      h2
+  section#background
+    .gradient
+    canvas#canvas(height='', width='')
+  section#menu
+    ul
+      a(href='index.html')
+        li Home
+      a(href='inloggen.html')
+        li Inloggen
+      a(href='inzenden.html')
+        li Stelling inzenden
+      a(href='mogelijk.html')
+        li Volgende stelling
+      a(href='stellingen.html')
+        li Stellingen
+      a(href='plaats.html')
+        li Plaats Stembus
+      a(href='over.html')
+        li Over
+      a(href='contact.html')
+        li Contact
+  section#sendForm
+    header
+      #terugknop
+        h2 Terug
+      h2 Bericht
+    textarea(rows='20')
+    footer
+      button Verstuur
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js')
+
+  script(src='javascripts/main.js')
