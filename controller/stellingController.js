@@ -46,9 +46,12 @@ var stellingController = function (Stelling, js2xmlparser) {
                         if (typeof  req.query.limit == "undefined" || req.query.limit == null) {
                             var totalpages = 1;
                             var currentPage = 1;
-                            var last = stellingCount;
+                            var last = 1;
                             var next = 1;
                             var previous = 1;
+                            var prevPage = 1;
+                            var nextPage = 1;
+                            var lastPage = 1;
                             var urllimit = stellingCount;
                             var currenItems = stellingCount;
                             //var startlast = Math.max(stellingCount, stellingCount - Number(req.query.limit));
@@ -56,10 +59,13 @@ var stellingController = function (Stelling, js2xmlparser) {
                         }
                     } else {
                         var totalpages = Math.ceil(stellingCount / req.query.limit);
-                        var currentPage = Math.ceil(req.query.limit / req.query.start);
+                        var currentPage = Math.ceil(req.query.start/req.query.limit);
+                        var nextPage = Math.min(currentPage+1, totalpages);
+                        var prevPage = Math.max(1, (Number(currentPage)-1));
+                        var lastPage = totalpages;
                         var last = stellingCount;
-                        var next = Number(req.query.start) + 1;
-                        var previous = Number(req.query.start) - Number(req.query.limit);
+                        var next = Math.min(((currentPage * req.query.limit))+1, stellingCount);
+                        var previous = Math.max(1, (prevPage * req.query.limit) - req.query.limit +1);
                         var urllimit = req.query.limit;
                         //var startlast = Math.max(stellingCount, stellingCount - Number(req.query.limit));
                         var currenItems = Number(req.query.limit);
@@ -79,17 +85,17 @@ var stellingController = function (Stelling, js2xmlparser) {
                             },
                             {
                                 rel: "previous",
-                                page: Math.max(1, currentPage - 1),
+                                page: prevPage,
                                 href: 'http://' + req.headers.host + '/api/stelling?start=' + previous + '&limit=' + urllimit
                             },
                             {
                                 rel: "next",
-                                page: Math.min(10, currentPage + 1),
+                                page: nextPage,
                                 href: 'http://' + req.headers.host + '/api/stelling?start=' + next + '&limit=' + urllimit
                             },
                             {
                                 rel: "last",
-                                page: last,
+                                page: lastPage,
                                 href: 'http://' + req.headers.host + '/api/stelling?start=' + last + '&limit=' + urllimit
                             }
                         ]
