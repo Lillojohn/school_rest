@@ -11,7 +11,7 @@
     "data2xml": "^1.2.4",
     "debug": "~2.2.0",
     "easyxml": "^2.0.1",
-    "express": "~4.13.1",
+    "express": "~4.17.3",
     "gulp": "^3.9.0",
     "gulp-nodemon": "^2.0.6",
     "jade": "~1.11.0",
